@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>¡Feliz Navidad!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video id="background-video" autoplay muted onended="playNextVideo()">
+        <source src="./video/videoDeFondo.mp4" type="video/mp4">
+        <source src="./video/INTRONAVIDAD.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <div id="gift" class="container__regalo" onclick="playMusic(); animateGift()">
+        <img class="gift_img" src="./imgs/regaloNVD.gif" alt="Regalo de Navidad">
+    </div>
+
+    <div id="message-container" class="hidden">
+        <button class="btnCerrar" onclick="stopMusicAndClose()">cerrar</button>
+        <img src="./imgs/CampanaNavideña.png" alt="Imagen al inicio" class="inicio">
+        <img src="./imgs/CampanaNavideña.png" alt="Imagen al inicio" class="inicio">
+        <img src="./imgs/CampanaNavideña.png" alt="Imagen al inicio" class="inicio">
+        <p id="message" class="p_message"></p>
+        <img src="./imgs/CampanaGrandeNavideña.png" alt="Imagen al final" class="final">
+        <input type="text" id="nameInput" placeholder="Ingrese un nombre">
+        <button onclick="changeName()">Guardar y Enviar</button>
+        <p class="enviartext">Si presionas Guardar, ya se Copio el URL solo comparte</p>
+        
+    </div>
+
+    <audio id="music" src="./musica/MusicaNavideña.mp3" loop></audio>
+
+    <footer class="footertext">
+        desarrollado por Artur (ALP)
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

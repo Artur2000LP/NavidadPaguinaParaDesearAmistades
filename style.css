@@ -1,0 +1,161 @@
+body {
+    font-family: 'Emilys Candy', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el tamaño del video manteniendo la proporción y llenando el contenedor */
+    z-index: -1;
+}
+
+#gift {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+#gift:hover {
+    transform: rotate(10deg);
+}
+
+#message-container {
+  
+    text-align: center;
+    margin-top: 20px;
+}
+.container__regalo {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    overflow: hidden;
+}
+
+.gift_img {
+    width: 90%;
+    height: 70%;
+    object-fit: cover;
+    object-position: left bottom;
+}
+
+/*mensaje*/
+.hidden {
+    display: none;   
+}
+.p_message {
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+
+#message-container {
+    text-align: center;
+    margin-top: 20px;
+    color: white; /* Color del texto */
+    font-size: 24px; /* Tamaño del texto */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.p_message {
+    font-family: 'Emilys Candy', serif;
+    font-size: 29px;
+    font-weight: 50; 
+    margin-top: 2px;
+    margin-bottom: 1rem;
+    
+}
+.enviartext{
+    font-family: 'CursiveFont', cursive; 
+    font-size: 20px;
+}
+
+.inicio, .final {
+    width: 40px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Para mantener la proporción de la imagen */
+    margin-right: 10px; /* Espaciado entre la imagen y el texto */
+    margin-bottom: 10px; /* Espaciado entre la imagen y el texto */
+}
+.final {
+    display: flex;
+    margin: 0 auto;
+}
+
+#nameInput {
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+    margin-top: 1rem;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#nameInput:focus {
+    border-color: #4CAF50; /* Cambia el color del borde cuando el input está enfocado */
+}
+.btnCerrar {
+    font-family: sans-serif;
+    padding: 5px;
+    position: fixed;
+    top: 1px;
+    right: 10px;
+    font-size: 18px;
+    background-color: #1d4a1e9d;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btnCerrar:hover {
+    color: red; /* Cambia el color al pasar el ratón sobre el botón */
+}
+
+button {
+    margin-top: 10px; /* Nuevo margen para separar del input */
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.footertext {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #4dbaf01f;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+
+/* Media query para pantallas más grandes (ej. ordenadores) */
+@media only screen and (min-width: 600px) {
+    #gift {
+        width: 300px;
+    }
+}
+
